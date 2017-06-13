@@ -82,7 +82,7 @@ PERIFLIB_SOURCES =
 #######################################
 # binaries
 #######################################
-BINPATH = 
+BINPATH = ../../toolchain/osx/gcc-arm-none-eabi-6-2017-q1-update/bin
 PREFIX = arm-none-eabi-
 CC = $(BINPATH)/$(PREFIX)gcc
 AS = $(BINPATH)/$(PREFIX)gcc -x assembler-with-cpp
