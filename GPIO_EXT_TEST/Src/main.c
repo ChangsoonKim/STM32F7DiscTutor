@@ -69,9 +69,9 @@ inline static void update_btn_status() {
 
   // for prevent chattering
   if (now - prev_updated_time < 100) return;
-
   const GPIO_PinState btn_status = HAL_GPIO_ReadPin(USER_BTN_GPIO_Port, USER_BTN_Pin);
-
+  prev_updated_time = now;
+  
   led_status = btn_status;
 }
 
